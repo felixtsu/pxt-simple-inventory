@@ -151,7 +151,8 @@ namespace pxt_inventory {
     //% block
     //% blockid=pxt_inventory_toggle_toolbar block="显示道具条 %show"
     export function toggleToolbar(show: boolean) {
-        iconSprite.setFlag(SpriteFlag.Invisible, show)
+        iconSprite.setFlag(SpriteFlag.Invisible, !show)
+        update()
     }
 
 }
