@@ -56,22 +56,35 @@ namespace pxt_inventory {
         update()
     }
 
+
     //% block
-    //% blockid=pxt_inventory_remove_item block="移除道具 %name || 全部 $all"
-    export function removeItem(name: string, all: boolean = false) {
+    //% blockid=pxt_inventory_remove_item block="移除道具 %name || 数量 $amount"
+    export function removeItem(name:string, amount:number = 1) {
 
         let itemToBeRemoved = items.find((value: Item, index: number) => {
             return name == value.name
         })
         if (itemToBeRemoved != undefined) {
-            if (all || itemToBeRemoved.amount == 1) {
+            if (itemToBeRemoved.amount == 1) {
                 items.removeElement(itemToBeRemoved)
             } else {
-                itemToBeRemoved.amount -= 1
+                itemToBeRemoved.amount -= amount
             }
+            update()
         }
+    }
 
-        update()
+    //% block
+    //% blockid=pxt_inventory_remove_all_item_of block="移除全部的 %name 道具"
+    export function removeAllItemOf(name: string) {
+
+        let itemToBeRemoved = items.find((value: Item, index: number) => {
+            return name == value.name
+        })
+        if (itemToBeRemoved != undefined) {
+            items.removeElement(itemToBeRemoved)
+            update()
+        }
     }
 
 
