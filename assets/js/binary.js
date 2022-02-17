@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.20/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.1","target":"arcade","targetVersion":"1.8.20","repo":"felixtsu/pxt-simple-inventory"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.20/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.2","target":"arcade","targetVersion":"1.8.20","repo":"felixtsu/pxt-simple-inventory"}
 // total=1204747 new=5.47% cached=88.94% other=5.59%
 (function (ectx) {
 'use strict';
@@ -405,7 +405,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P88867(s) {
+function _main___P91622(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -751,41 +751,41 @@ switch (step) {
     s.callLocIdx = 48; s.pc = 30; return s.tmp_0;
   case 30:
     r0 = s.retval;
-    r0 = pxsim_pxtcore_mkClassInstance(pxt_inventory_Item__C77874_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(pxt_inventory_Item__C91334_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = pxt_inventory_Item_constructor__P77875_mk(s);
+    s.tmp_1 = pxt_inventory_Item_constructor__P91335_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = "EMPTY_HANDED_INTERNAL_USAGE";
-    r0 = pxsim.image.ofBuffer(_hex77896);
+    r0 = pxsim.image.ofBuffer(_hex91356);
     s.tmp_1.arg2 = r0;
     s.tmp_1.arg3 = 1;
     s.callLocIdx = 49; s.pc = 31; return s.tmp_1;
   case 31:
     r0 = s.retval;
-    globals.EMPTY_HANDED___77893 = (s.tmp_0);
+    globals.EMPTY_HANDED___91353 = (s.tmp_0);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
-    r0 = pxsim_Array__push(s.tmp_0, globals.EMPTY_HANDED___77893);
-    globals.items___77898 = (s.tmp_0);
+    r0 = pxsim_Array__push(s.tmp_0, globals.EMPTY_HANDED___91353);
+    globals.items___91358 = (s.tmp_0);
     s.tmp_0 = sprites_create__P73552_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex77903);
+    r0 = pxsim.image.ofBuffer(_hex91363);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = undefined;
     s.callLocIdx = 50; s.pc = 32; return s.tmp_0;
   case 32:
     r0 = s.retval;
-    globals.iconSprite___77904 = (r0);
+    globals.iconSprite___91364 = (r0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P88867.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P88867.continuations = [  ]
+_main___P91622.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P91622.continuations = [  ]
 
-function _main___P88867_mk(s) {
+function _main___P91622_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P88867, depth: s.depth + 1,
+        parent: s, fn: _main___P91622, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -810,8 +810,8 @@ const _hex76144 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000
 const _hex76146 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cc00000000000000b0bbbbbbbbcb00c0cd000000000000001bddddddddbd0c1ccd000000000000b011cbccccccbc0c1ccd000000000000b01d6c666666bc0cbccd000000000000b01d6c616661bc0c1ccd000000000000b01d6c161666bccc1bcd000000000000b01d6c666166bcccbbcd000000000000b01d6c666666bccc1bcd000000000000b01d6c666661bccc1bcd000000000000b01d6c666661bcccbbcd000000000000b01d6c666661bccc1bcd000000000000b01d6c666666bc0c1ccd000000000000b01dcbccccccbc0cbccd000000000000c0b1bbbbbbbbbb0cdccb000000000000c0bbbbbbbbbbcb00dc0c00000000000000cccccccccc0c00cc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 const _hex76148 = pxsim.BufferMethods.createBufferFromHex("87042000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004004000000000000000000000000000054450000000000000000000000440b00bbbb00b0440000000000000040550b00000000b0550400000000000040b5000044bb00005b04000000000000b00b0044ddddbb00b00b0000000000000000405d55d5dd0b00000000000000000000d4555555ddbd0000000000000000000054555555d5bd0000000000000000b44055555555d5dd0b4b000000000040b54055555555d5dd0b5b040000000040b54055555555d5dd0b5b040000000000b44055115555d5dd0b4b000000000000000054115555d5bd00000000000000000000d4555555ddbd00000000000000000000405d55d5dd0b0000000000000000b00b0044ddddbb00b00b00000000000040b5000044bb00005b0400000000000040550b00000000b0550400000000000000440b00bbbb00b0440000000000000000000000544500000000000000000000000000004004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 const _hex76150 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000bbbb00000000000000000000000000b055bb00bbbbbb000000000000000000b0b5bdbcbbbbddcb0000000000000000b0dbcb5b5555bbdd0c00000000000000b0cbdcbdbb5b55dbcd0000000000000000c0dddb11d15bb5bd0c00000000000000bbbd111111b155bb0c00000000000000db1b111111115bb5cb00000000000000db1bb11d1199b9d5cb00000000000000db1b11bb9199b955cb000000000000005b1b11b19b99995bcb000000000000005b1d1111bb99995ccb00000000000000b0b511bbbb99995ccb00000000000000b0d51d919999d95b0b00000000000000005bdb919999c9d50b0000000000000000b0d51b99d9bcb5000000000000000000005bd5bbbc550b00000000000000000000b05b5555bd000000000000000000000000b0bbbb00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex77896 = pxsim.BufferMethods.createBufferFromHex("870401000100000000000000")
-const _hex77903 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex91356 = pxsim.BufferMethods.createBufferFromHex("870401000100000000000000")
+const _hex91363 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 
 
 
@@ -3936,7 +3936,7 @@ function helpers_arrayForEach__P71597_mk(s) {
 
 
 
-function pxt_inventory_Item_constructor__P77875(s) {
+function pxt_inventory_Item_constructor__P91335(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3954,7 +3954,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, pxt_inventory_Item__C77874_VT)) failedCast(r0);
+    if (!checkSubtype(r0, pxt_inventory_Item__C91334_VT)) failedCast(r0);
     r0 = (s.arg0).fields["name"] = (s.arg1);
     r0 = (s.arg0).fields["img"] = (s.arg2);
     r0 = (s.arg0).fields["amount"] = (s.arg3);
@@ -3962,12 +3962,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-pxt_inventory_Item_constructor__P77875.info = {"start":208,"length":154,"line":10,"column":8,"endLine":14,"endColumn":9,"fileName":"simple-inventory.ts","functionName":"inline","argumentNames":["this","name","img","amount"]}
+pxt_inventory_Item_constructor__P91335.info = {"start":208,"length":154,"line":10,"column":8,"endLine":14,"endColumn":9,"fileName":"simple-inventory.ts","functionName":"inline","argumentNames":["this","name","img","amount"]}
 
-function pxt_inventory_Item_constructor__P77875_mk(s) {
+function pxt_inventory_Item_constructor__P91335_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: pxt_inventory_Item_constructor__P77875, depth: s.depth + 1,
+        parent: s, fn: pxt_inventory_Item_constructor__P91335, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
   arg1: undefined,
@@ -39641,7 +39641,7 @@ const Math_FastRandom__C74228_VT = mkVTable({
     "pickRandom": Math_FastRandom_pickRandom__P74233,
   },
 });
-const pxt_inventory_Item__C77874_VT = mkVTable({
+const pxt_inventory_Item__C91334_VT = mkVTable({
   name: "Item",
   numFields: 3,
   classNo: 19,
@@ -40844,7 +40844,7 @@ const sprites_BaseSpriteSayRenderer__C73536_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["EMPTY_HANDED___77893","items___77898","iconSprite___77904"])
+const breakpoints = setupDebugger(1, ["EMPTY_HANDED___91353","items___91358","iconSprite___91364"])
 
-return _main___P88867
+return _main___P91622
 })
