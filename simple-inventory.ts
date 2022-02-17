@@ -1,6 +1,6 @@
 //%block="SimpleInventory"
 //%block.loc.zh-CN="装备/物品"
-//% weight=100 color=#0fbc11 icon=""
+//% weight=100 color=#F3A21C
 namespace pxt_inventory {
 
     class Item {
@@ -39,6 +39,7 @@ namespace pxt_inventory {
     `)
 
     //% block
+    //% amount.defl=1
     //% blockid=pxt_inventory_add_item block="增加道具 %name 图标 %img=screen_image_picker  || 数量 $amount"
     export function addItem(name: string, img: Image, amount: number = 1) {
         let oldItem = items.find((value: Item) => {
@@ -58,6 +59,7 @@ namespace pxt_inventory {
 
 
     //% block
+    //% amount.defl=1
     //% blockid=pxt_inventory_remove_item block="移除道具 %name || 数量 $amount"
     export function removeItem(name:string, amount:number = 1) {
 
@@ -147,7 +149,7 @@ namespace pxt_inventory {
     }
 
     //% block
-    //% blockid=pxt_inventory_toggle_toolbar block="显示道具条 %show=toggleWinLose "
+    //% blockid=pxt_inventory_toggle_toolbar block="显示道具条 %show"
     export function toggleToolbar(show: boolean) {
         iconSprite.setFlag(SpriteFlag.Invisible, show)
     }
